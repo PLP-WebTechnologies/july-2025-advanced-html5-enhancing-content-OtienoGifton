@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Enhanced Form</h1>
+      <p>
+        This page includes structured content, a complete HTML5 form, and
+        semantic layout.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Content Overview</h2>
+        <ul>
+          <li>Semantic HTML structure</li>
+          <li>Table with useful data</li>
+          <li>Embedded media: image and video</li>
+          <li>Form with validation</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Sample Data Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Topic</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Form Validation</td>
+              <td>Ensure user input is complete and correct</td>
+            </tr>
+            <tr>
+              <td>Media</td>
+              <td>Enhance engagement</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Embedded Media</h2>
+        <img
+          src="https://www.google.com/imgres?q=cat&imgurl=http%3A%2F%2Fwww.alleycat.org%2Fwp-content%2Fuploads%2F2019%2F03%2FFELV-cat.jpg&imgrefurl=https%3A%2F%2Fwww.alleycat.org%2Fresources%2Fthe-natural-history-of-the-cat%2F&docid=9rMsr632qCnewM&tbnid=r2UYNPzMVoocFM&vet=12ahUKEwjy6fKOpfGOAxWF87sIHUt4M6UQM3oECDAQAA..i&w=703&h=463&hcb=2&ved=2ahUKEwjy6fKOpfGOAxWF87sIHUt4M6UQM3oECDAQAA"
+          alt="Placeholder image"
+        />
+        <video controls width="300">
+          <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4"
+          />
+          Video not supported
+        </video>
+      </section>
+
+      <section>
+        <h2>User Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+          <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="fname">First Name *</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="John"
+              required
+            />
+
+            <label for="lname">Last Name *</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Doe"
+              required
+            />
+
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="user@example.com"
+              required
+            />
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Login Info</legend>
+
+            <label for="username">Username *</label>
+            <input type="text" id="username" name="username" required />
+
+            <label for="password">Password *</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="6"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferences</legend>
+
+            <label for="bio">Short Bio</label>
+            <textarea
+              id="bio"
+              name="bio"
+              placeholder="Write a short bio..."
+            ></textarea>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+              <option value="">Select</option>
+              <option value="m">Male</option>
+              <option value="f">Female</option>
+              <option value="x">Other</option>
+            </select>
+
+            <p>Subscribe to newsletter:</p>
+            <label
+              ><input type="radio" name="newsletter" value="yes" required />
+              Yes</label
+            >
+            <label
+              ><input type="radio" name="newsletter" value="no" /> No</label
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>Confirmation</legend>
+
+            <label
+              ><input type="checkbox" name="terms" required /> I agree to the
+              terms</label
+            >
+
+            <label for="ref">Referral Code</label>
+            <input type="text" id="ref" name="ref" value="REF123" readonly />
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Enhanced Form Example</p>
+    </footer>
+  </body>
+</html>
